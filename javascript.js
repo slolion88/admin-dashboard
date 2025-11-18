@@ -1,13 +1,12 @@
 const search = document.querySelector("#search-button");
+const searchbar = document.querySelector("#search-bar");
 
 search.addEventListener("click", function () {
-    // Perform search function - log in console for now.
-    console.log(document.querySelector("#search-bar").value);
+    console.log(searchbar.value);
 });
 
-search.addEventListener("keydown", function (event) {
-    // Perform search function - log in console for now.
+searchbar.addEventListener("keydown", event => {
     if (event.key === "Enter") {
-        console.log(document.querySelector("#search-bar").value);
+        console.log(searchbar.value);
     }
 });
